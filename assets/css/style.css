@@ -16,7 +16,8 @@
  .text-silver{color: #6B6B84;}
 
  .bg-orange2{color: #FD4628;}
- .bg-yello{color: #f5890d;}
+ .bg-yello1{color: #f5890d;}
+ .bg-yello{background: #f5890d;}
  .bg-orange2{color: #FD4628;}
  .bg-lite-yellow{color: #fee9ca;}
 
@@ -40,10 +41,10 @@
  .fs-7{font-size: 19px;}
  .fs-8{font-size: 30px;}
  .fs-9{font-size: 60px;}
-.line-height-1{line-height: 30px;
+ .line-height-1{line-height: 30px;
     font-weight: 400;}
 
- .btn{
+ .btn-1{
      color: #fff;
      font-size: 16px;
      transition: 0.5s;
@@ -54,10 +55,26 @@
      background:#FD4628;
      display: inline-block;
      transition-timing-function: ease;
+ }
+ .btn-2{
+     color: #fff;
+     font-size: 16px;
+     transition: 0.5s;
+     font-weight: 500;
+     padding: 12px 35px;
+     position: relative;
+     border-radius: 10px;
+     background: #f5890d;
+     display: inline-block;
+     transition-timing-function: ease;
  }   
- .btn:hover{
+ .btn-1:hover{
      color: #fff;
      background: #f5890d;
+ }
+ .btn-2:hover{
+     color: #fff;
+     background: #FD4628;
  }
  .text-black:hover {color:#FD4628;}
 
@@ -78,14 +95,27 @@
    position: absolute;
    animation: move 2s linear infinite alternate;
 }
-.banner
+.banner .shape-2{
+    margin-top:3.5%;
+    left:50%;
+    position: absolute;
+    animation: move2 2s linear infinite alternate;
+ }
+
 .banner .shape-3{
-    width: 60px;
-    height: 70px;
+    top: 75%;
     left: .7%;
+    z-index: 1;
     position: absolute;
     animation: move 2s linear infinite alternate;
- }
+}
+.banner .shape-4{
+    top: 85%;
+    left: 50%;
+    z-index: 1;
+    position: absolute;
+    animation: move4 2s linear infinite alternate;
+}
 
 /* Hero section end */
 
@@ -96,5 +126,13 @@
 @keyframes move{
     0%{}
     100%{left:3%;}
+}
+@keyframes move2{
+    0%{}
+    100%{left:53%;}
+}
+@keyframes move4{
+    0%{}
+    100%{top:88%;}
 }
 /* animation section end */
