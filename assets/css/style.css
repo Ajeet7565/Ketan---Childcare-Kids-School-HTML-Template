@@ -10,22 +10,39 @@
     box-sizing: border-box;
     font-family: "Catamaran", sans-serif;
 }
+
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #1b0238;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
 /* Universal css start */
  .text-orange2{color: #FD4628;}
  .text-black2{color: #1B0238 !important;}
  .text-silver{color: #6B6B84;}
 
+ .bg-light-orange{    background-color: #fdf6ed}
  .bg-orange2{color: #FD4628;}
  .bg-yello1{color: #f5890d;}
  .bg-yello{background: #f5890d;}
  .bg-orange2{color: #FD4628;}
  .bg-lite-yellow{color: #fee9ca;}
+ .bg-value1{background-color: #d3f5fe;}
+ .bg-value2{background-color: #fce0ad;}
+ .bg-value3{background-color: #fbc9d5;}
 
   .top-4{top: 4%;}
   .top-5{top: 5%;}
   .top-10{top: 10%;}
   .start-10{left: 10%;}
   .top-20{top: 10%;}
+
+.pt-10{padding-top: 100px;}
+.pt-15{padding-top: 150px;}
+.pt-20{padding-top: 200px;}
 
   .mt-10{margin-top: 100px;}   
   .mt-15{margin-top: 170px;}   
@@ -147,28 +164,145 @@ a.dropdown-item:hover{
 /* /Hero section end */
 
 /* who we are section start */
-
-/* /who we are section end */
-
-
-
-
-
-
-
-.who-we span{
+.who-we span,
+.popular span,
+.core-value span{
     font-weight: 600;
     font-size: 20px;
     color: #FD4628;
-    font-family:  'Sacramento', cursive;;
+    font-family:  'Sacramento', cursive;
+}
+h3{
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.who-we p{
+
+    margin-bottom:0px;
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
 }
 
+.who-we ul li{
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-weight:600;
+    font-size: 16px;
+    
+}
+
+.who-we ul li span{
+    width: 30px;
+    height: 30px;
+   
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    background: #FD4628;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+    transition-duration: 0.8s;
+    font-family:"Roboto", sans-serif;;
+}
+.who-we ul li:hover span{
+    background: #f5890d;
+    transition: all 0.5s linear;
+    transition-duration: 0.8s;
+}
+.who-we-shape{
+   margin-top: -50px;
+    margin-left: 85%;
+    left: .7%;
+    position: absolute;
+    animation: move 2s linear infinite alternate;
+}
+
+/* /who we are section end */
+
+/* Our popular section start */
+.popular .card-body .price{
+    position: absolute;
+    display: inline-block;
+    padding: 10px;
+    background-color: #ea512e;
+    right: 0;
+    top: 272px;;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1;
+    border-radius: 0 0 0 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.popular .card:hover .price{
+    background: #f5890d;
+}
+.popular .card:hover h4{
+    color: #FD4628;
+    transition: 0.5s;
+}
+.popular .card:hover img{
+    transform: rotate(1deg) scale(1.09);
+    transition: all 0.3s linear;
+}
+
+.popular .card-body ul li span{
+    font-weight: 500;
+    font-size: 16px;
+    color: #FD4628;
+    font-family: "Roboto", sans-serif; 
+
+}
+.popular .card-body ul li {
+    font-size:16px;
+    font-weight: 500;
+}
+.popular .card-body ul{
+ border-top-width: 1px;
+ border-top-style: dashed;
+ border-top-color: #ea512e;
+ }
+
+ .popular .class-shape .shape-1 img{
+    margin-top:-8%;
+  margin-left: 0%;
+ }
+
+ .popular .class-shape .shape-2 img{
+
+   margin-top:-30%;
+   margin-left: 77.80%;
+ }
 
 
+/* Our popular section end */
 
+/* Our core value section start */
 
+.core-value .number{
+    width: 60px;
+    height: 60px;
+    margin-top: 1.5%;
+    margin-right:10px;
+    font-size: 25px;
+    color: #1b0238;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    outline-offset: 4px;
+    border: 0px solid #fff;
+    outline: 2px solid #ccc;
+}
 
-
+/* Our core value section end */
 
 /* animation section start */
 @keyframes move{
