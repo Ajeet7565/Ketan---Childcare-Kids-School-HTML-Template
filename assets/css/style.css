@@ -28,7 +28,7 @@
  .bg-orange2{color: #FD4628;}
  .bg-yello1{color: #f5890d;}
  .bg-yello{background: #f5890d;}
- .bg-orange2{color: #FD4628;}
+ .bg-orange3{background: #FD4628;}
  .bg-lite-yellow{color: #fee9ca;}
  .bg-value1{background-color: #d3f5fe;}
  .bg-value2{background-color: #fce0ad;}
@@ -43,6 +43,11 @@
 .pt-10{padding-top: 100px;}
 .pt-15{padding-top: 150px;}
 .pt-20{padding-top: 200px;}
+.pb-70{padding-bottom: 70px;}
+.pb-80{padding-bottom: 80px;}
+.pb-90{padding-bottom: 90px;}
+.pb-100{padding-bottom: 100px;}
+
 
   .mt-10{margin-top: 100px;}   
   .mt-15{margin-top: 170px;}   
@@ -166,7 +171,8 @@ a.dropdown-item:hover{
 /* who we are section start */
 .who-we span,
 .popular span,
-.core-value span{
+.core-value span,
+.teacher span{
     font-weight: 600;
     font-size: 20px;
     color: #FD4628;
@@ -208,7 +214,7 @@ h3{
     display: inline-block;
     transition: all 0.5s ease-in-out;
     transition-duration: 0.8s;
-    font-family:"Roboto", sans-serif;;
+    font-family:"Roboto", sans-serif;
 }
 .who-we ul li:hover span{
     background: #f5890d;
@@ -298,11 +304,62 @@ h3{
     text-align: center;
     display: inline-block;
     outline-offset: 4px;
+    transition: all 0.5s;
     border: 0px solid #fff;
     outline: 2px solid #ccc;
 }
 
+.core-value .number:hover{
+    background: #ea512e;
+    transition: all 0.5s;
+    outline: 2px solid #ea512e;
+}
 /* Our core value section end */
+
+/* Our core teacher section start */
+.teacher{
+    background: url(../img/teacher-bg.jpg);
+}
+
+.teacher .social-media{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 0px;
+    margin-bottom: -70px;
+    transition: all 0.1s ease-in;
+}
+.teacher .social-media  li   {
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    background: #ea512e;
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+}
+.teacher .social-media  li:hover{
+    background: #f5890d;
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+}
+
+.teacher .teacher-image:hover .social-media{
+    margin-bottom:0px;
+    transition: all 0.2s ease-out;
+
+}
+.teacher .social-media  li a  {
+    color: #fff;
+}
+.teacher  h6{
+    font-weight: 600;
+    margin-top: -08px;
+}
+/* Our core teacher section end */
 
 /* animation section start */
 @keyframes move{
